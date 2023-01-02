@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count down</title>
+    <link rel="stylesheet" href="/Javascript/Prj-Js/countdown.css">
+</head>
+<body>
+    <div class="main">
+        <input readonly id="obutton"><button id="button" onclick="toggleing()"></button></input>
+        <div class="heading">
+            <h2 id="titles1">We are comming soon on</h2>
+            <input type="date" placeholder="01-01-2023" id="Hi">
+        </div>
+        <div class="timeRemaining">
+            The time remaining till: <span id="timeRem" style="display: inline;" onclick="only()">The Date</span>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="0" required readonly class="show">
+            <input type="text" placeholder="0" required readonly class="show">
+            <input type="text" placeholder="0" required readonly class="show">
+            <input type="text" placeholder="0" required readonly class="show">
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/Javascript/Prj-Js/countdown.js"></script>
+</html>

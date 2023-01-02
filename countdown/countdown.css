@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease-in-out ;
+    transition-delay: 0ms;
+}
+body{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 54rem;
+    transition: 0.5s;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 2px 2px 12px rgb(37, 37, 37),
+               -2px -2px 12px rgb(38, 38, 38);
+}
+.heading{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.inputs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+input{
+    padding:6px;
+    margin: 12px;
+    border-radius: 4px;
+    border:solid black 1px;
+    outline: 1px;
+    text-align: center;
+}
+input:valid,input:focus,input:active{
+    border: solid rgb(91, 46, 46) 1.8px;
+    box-shadow:0.5px 0.5px 4px rgb(92, 77, 50);
+}
+button{
+    padding:1px;
+    margin: 0%;
+    position: relative;
+    bottom: 24px;
+    right: 12px;
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    animation-name: togglel;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    background-color: rgb(34, 34, 34);
+    border: solid white 1.5px;
+}
+#obutton{
+    margin: 2px;
+    padding: 0%;
+    width:40px;
+    height: 20px;
+    border-radius: 12px;
+    background-color: white;
+    border: solid rgb(180,180,180) 2px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(78, 78, 78),
+               -2px -2px 5px rgb(78, 78, 78);
+}
+#button.active{
+    border: solid black 2px;
+    animation-name: toggled;
+    position: relative;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-direction: normal;
+}
+#obutton.active{
+    border: solid rgb(180, 180, 180) 2px;
+}
+@keyframes toggled {
+    0% {
+        left: -10px;
+    }
+    50%{
+        left:11px;
+    }
+    100%{
+        left: -10px;
+    }
+}
+@keyframes togglel {
+    0% {
+        left: -10px;
+    }
+    50%{
+        left:11px
+    }
+    100%{
+        left:-10px;
+    }
+}

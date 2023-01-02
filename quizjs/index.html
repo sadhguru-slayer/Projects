@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="end">
+            <button id="end">End Test</button>
+        </div>
+        <div class="main">
+            <h2 id="ResultPageH" style="display: none;">Succesfully Submited</h2>
+            <h3 id="ResultPageM" style="display: none;">Succesfully Submited</h3>
+            <div class="content" style="display: inline;">
+                <h2 id="question">This is Question</h2>
+                <div class="options">
+                    <input value="a" type="radio" name="options" class="option" id="a"></input><label
+                        for="a">option1</label>
+                    <input value="b" type="radio" name="options" class="option" id="b"></input><label
+                        for="b">option1</label>
+                    <input value="c" type="radio" name="options" class="option" id="c"></input><label
+                        for="c">option1</label>
+                    <input value="d" type="radio" name="options" class="option" id="d"></input><label
+                        for="d">option1</label>
+                </div>
+            </div>
+            <div class="buttons" >
+                <button type="submit" id="prev" onclick="prevQues()">Prev</button>
+                <button type="submit" id="sub" onclick="onSubmit()">Submit</button>
+                <button type="submit" id="next" style="display: inline;" onclick="nextQues()">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/Javascript/Prj-Js/quizjs/script.js"></script>
+
+</html>
